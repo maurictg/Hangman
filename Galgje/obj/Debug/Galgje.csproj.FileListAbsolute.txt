@@ -1,0 +1,10 @@
+C:\Users\mauri\source\repos\Galgje\Galgje\bin\Debug\Galgje.exe.config
+C:\Users\mauri\source\repos\Galgje\Galgje\bin\Debug\Galgje.exe
+C:\Users\mauri\source\repos\Galgje\Galgje\bin\Debug\Galgje.pdb
+C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.csprojAssemblyReference.cache
+C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.Properties.Resources.resources
+C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.csproj.GenerateResource.cache
+C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.csproj.CoreCompileInputs.cache
+C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.exe
+C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.pdb
+C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.Form1.resources
