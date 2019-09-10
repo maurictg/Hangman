@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
@@ -21,6 +17,7 @@ namespace Galgje
 
         static char[] Word = { };
         static bool[] Known = { };
+        static bool[] Pressed = new bool[Alfabeth.Length];
         int level = 0;
         int score = 0;
 
@@ -49,6 +46,9 @@ namespace Galgje
             score = 1000;
             MapWord();
             sw.Start();
+            this.Activate();
+            this.Focus();
+            this.KeyPreview = true;
         }
 
         public void LoadWords()
@@ -103,26 +103,32 @@ namespace Galgje
 
         private void Guess(char letter, Button sender)
         {
-            if (Word.Contains(letter))
-            {
-                sender.BackColor = Color.Green;
-                for (int i = 0; i < Word.Length; i++)
-                    if(Word[i]==letter)
-                        Known[i] = true;
-                score += 125;
-            }
-            else
-            {
-                sender.BackColor = Color.Red;
-                level++;
-                score -= 100;
-            }
+            int ix = Array.IndexOf(Alfabeth,letter);
 
-            MapWord();
-            MapImage();
-            MapNumber();
-            sender.Enabled = false;
-            CheckWin();
+            if(!Pressed[ix])
+            {
+                if (Word.Contains(letter))
+                {
+                    sender.BackColor = Color.Green;
+                    for (int i = 0; i < Word.Length; i++)
+                        if (Word[i] == letter)
+                            Known[i] = true;
+                    score += 125;
+                }
+                else
+                {
+                    sender.BackColor = Color.Red;
+                    level++;
+                    score -= 100;
+                }
+
+                MapWord();
+                MapImage();
+                MapNumber();
+                sender.Enabled = false;
+                CheckWin();
+                Pressed[ix] = true;
+            }
         }
 
         private char[] RandomWord()
@@ -214,6 +220,7 @@ namespace Galgje
             Word = RandomWord();
             Known = new bool[Word.Length];
             score += 1000;
+            Pressed = new bool[Alfabeth.Length];
             MapWord();
             MapNumber();
             sw.Restart();
@@ -264,6 +271,23 @@ namespace Galgje
             {
                 string win = (stat.Won) ? "Win" : "Lose";
                 lbStats.Items.Add($"{stat.Word} [{stat.Tries}/10] - {stat.Time.Minutes}:{stat.Time.Seconds}.{stat.Time.Milliseconds} ({win})");
+            }
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (cbUseKey.Checked)
+            {
+                try
+                {
+                    char c = (char)e.KeyValue;
+                    if (!Alfabeth.Contains(c))
+                        return;
+
+                    Button btn = (Button)this.Controls.Find("btn_" + c.ToString(), true).FirstOrDefault();
+                    Guess(c, btn);
+                }
+                catch { }
             }
         }
     }

@@ -8,3 +8,13 @@ C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.csproj.CoreCompileInp
 C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.exe
 C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.pdb
 C:\Users\mauri\source\repos\Galgje\Galgje\obj\Debug\Galgje.Form1.resources
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\bin\Debug\Galgje.exe.config
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\bin\Debug\Galgje.exe
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\bin\Debug\Galgje.pdb
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.csprojAssemblyReference.cache
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.Form1.resources
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.Properties.Resources.resources
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.csproj.GenerateResource.cache
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.csproj.CoreCompileInputs.cache
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.exe
+C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.pdb

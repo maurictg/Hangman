@@ -45,6 +45,7 @@
             this.lblWin = new System.Windows.Forms.Label();
             this.lblLose = new System.Windows.Forms.Label();
             this.lbStats = new System.Windows.Forms.ListBox();
+            this.cbUseKey = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbGalgje)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,12 +221,27 @@
             this.lbStats.Size = new System.Drawing.Size(587, 296);
             this.lbStats.TabIndex = 18;
             // 
+            // cbUseKey
+            // 
+            this.cbUseKey.AutoSize = true;
+            this.cbUseKey.Checked = true;
+            this.cbUseKey.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbUseKey.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUseKey.ForeColor = System.Drawing.Color.White;
+            this.cbUseKey.Location = new System.Drawing.Point(28, 715);
+            this.cbUseKey.Name = "cbUseKey";
+            this.cbUseKey.Size = new System.Drawing.Size(182, 36);
+            this.cbUseKey.TabIndex = 19;
+            this.cbUseKey.Text = "Use keyboard";
+            this.cbUseKey.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(1342, 796);
+            this.Controls.Add(this.cbUseKey);
             this.Controls.Add(this.lblTimespan);
             this.Controls.Add(this.lbStats);
             this.Controls.Add(this.lblLose);
@@ -246,6 +262,7 @@
             this.ShowIcon = false;
             this.Text = "Galgje";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbGalgje)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -270,6 +287,7 @@
         private System.Windows.Forms.Label lblWin;
         private System.Windows.Forms.Label lblLose;
         private System.Windows.Forms.ListBox lbStats;
+        private System.Windows.Forms.CheckBox cbUseKey;
     }
 }
 
