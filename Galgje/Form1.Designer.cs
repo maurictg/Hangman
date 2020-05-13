@@ -72,7 +72,7 @@
             this.lblWord.AutoSize = true;
             this.lblWord.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWord.ForeColor = System.Drawing.Color.Aqua;
-            this.lblWord.Location = new System.Drawing.Point(2, 312);
+            this.lblWord.Location = new System.Drawing.Point(2, 299);
             this.lblWord.Name = "lblWord";
             this.lblWord.Size = new System.Drawing.Size(870, 106);
             this.lblWord.TabIndex = 3;
@@ -216,7 +216,7 @@
             this.lbStats.ForeColor = System.Drawing.Color.White;
             this.lbStats.FormattingEnabled = true;
             this.lbStats.ItemHeight = 37;
-            this.lbStats.Location = new System.Drawing.Point(12, 468);
+            this.lbStats.Location = new System.Drawing.Point(12, 431);
             this.lbStats.Name = "lbStats";
             this.lbStats.Size = new System.Drawing.Size(587, 296);
             this.lbStats.TabIndex = 18;
@@ -228,7 +228,7 @@
             this.cbUseKey.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbUseKey.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUseKey.ForeColor = System.Drawing.Color.White;
-            this.cbUseKey.Location = new System.Drawing.Point(28, 715);
+            this.cbUseKey.Location = new System.Drawing.Point(20, 728);
             this.cbUseKey.Name = "cbUseKey";
             this.cbUseKey.Size = new System.Drawing.Size(182, 36);
             this.cbUseKey.TabIndex = 19;

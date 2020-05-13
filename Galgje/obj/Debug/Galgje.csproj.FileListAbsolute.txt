@@ -15,6 +15,5 @@ C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.csprojAssemblyRe
 C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.Form1.resources
 C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.Properties.Resources.resources
 C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.csproj.GenerateResource.cache
-C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.csproj.CoreCompileInputs.cache
 C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.exe
 C:\Users\mauri\Documents\GitHub\Hangman\Galgje\obj\Debug\Galgje.pdb

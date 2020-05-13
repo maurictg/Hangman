@@ -15,9 +15,10 @@ namespace Galgje
 
         List<Stats> Stats = new List<Stats>();
 
-        static char[] Word = { };
-        static bool[] Known = { };
-        static bool[] Pressed = new bool[Alfabeth.Length];
+        char[] Word = { };
+        bool[] Known = { };
+        bool[] Pressed = new bool[Alfabeth.Length];
+
         int level = 0;
         int score = 0;
 
@@ -27,9 +28,7 @@ namespace Galgje
         Stopwatch sw = new Stopwatch();
 
         public Form1()
-        {
-            InitializeComponent();
-        }
+            => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
             => Initialize();
@@ -250,6 +249,7 @@ namespace Galgje
                     Known[i] = true;
 
             MapWord();
+            CheckWin();
         }
 
         private void BtnReset_Click(object sender, EventArgs e)
